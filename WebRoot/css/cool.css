@@ -1,0 +1,623 @@
+/* EasyChair style sheet
+ * (c) 2008-2009 Andrei Voronkov
+ * (c) 2010-2011 easychair.org 
+ */
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  border-width: 0px;
+  font-size: 10pt;
+}
+
+body #content.help { font-size: 11pt; }
+#content.help h2 { font-size:18pt;}
+#content.help h3 { font-size:16pt;}
+#content.help h4 { font-size:12pt;}
+
+div.menu {
+  background-color: #D0D0F0;
+  padding: 0px 3px 2px 3px;
+  line-height: 140%;
+  font-size: 11pt;
+}
+.proceedingsmenu {
+  padding: 0px 3px 2px 3px;
+  line-height: 140%;
+  margin: 0px;
+  background-color: #aacccc;
+  color:#003366;
+  font-size: 11pt;
+}
+.rmenu { 
+  border-left: 1px #0000FF solid;
+  border-bottom: 1px #0000FF solid;
+  padding: 3px 5px 5px 5px;
+  margin: 0px 0px 5px 5px;
+  float:right;
+  color:#000088;
+  background-color:#d0d0f0;
+  font-size: 11pt;
+}
+/* to this id we refer also in Menu.pm and menu.js */
+#menualert {
+  color:#800000; /* this color has to be set also in menu.js in alertColor variable */
+}
+
+/*
+.proceedings .rmenu {
+  border-left: 1px #4C787E solid;
+  border-bottom: 1px #4C787E solid;
+  margin: 0px 0px 5px 5px;
+  color:#003366;
+  background-color: #aacccc;
+}*/
+
+#content.content {
+  border-width : 0pt;
+  border-top: 1px #0000FF solid;
+  margin : 0pt;
+  padding : 0pt 0pt 0pt 2px;
+}
+#content.nomenu {
+  border: 0pt;
+  margin : 0pt;
+  padding : 0pt;
+}
+#content.proceedings {
+  border-width : 0pt;
+  border-top: 1px #4C787E solid;
+  margin : 0pt;
+  padding : 0pt 0pt 0pt 2px;
+}
+
+h2 {
+  margin: 2px 0px 5pt 0px;
+  font-weight:normal;
+  font-size:16pt;
+}
+h3 {
+  margin: 7pt 0px 4pt 0px;
+  font-weight: normal;
+  font-size:14pt;
+}
+h4 {
+  margin: 6pt 0px 4pt 0px;
+  font-size:11pt;
+}
+p {
+  margin: 3pt 0pt 3pt 0pt;
+}
+
+.easybutton{ font-weight: bold;}
+
+a:active{
+  color : red;
+}
+.rmenu a:link {
+  color:#000088;
+}
+.rmenu a {
+  padding : 1px 2px 1px 2px;
+  margin : 1px;
+  display : block;
+}
+.rmenu a:hover {
+  color:white;
+  background-color:#003399;
+}
+.rmenu a:focus {
+  color:white;
+  background-color:#003399;
+}
+.rmenu a:active {
+  color:white;
+  background-color:#003399;
+}
+
+.blacklink {}
+a.blacklink:link {color: Blue; text-decoration: none}
+a.blacklink:visited {color: Black; text-decoration: none}
+
+/* Thin, colored horisontal rules */
+.easyline { 
+  color  : #6699cc;
+  height : 1px;
+}
+
+/* Various backgrounds */
+.greyborder { 
+  border-color: #ADADB5
+}
+
+/* formtable is useful for double-colum tables in which the right-hand
+   column contains inputs. If you change anything here, change it also
+   in wiki.css */
+.formtable {
+  background-color : #c4d8ff;
+  padding : 5px 12px 5px 12px;
+  border : solid #56a5ec 3px;
+  margin: 5px;
+}
+
+.formtable .heading {
+  font-weight : bold;
+  text-align : center;
+}
+
+.formtable td {
+  padding: 2px;
+  margin: 0px;
+  border: 0px;
+}
+.formtable textarea {
+}
+.formtable input[type="text"] {
+}
+.formtable input[type="submit"] {
+  font-weight:bold;
+  font-family: Helvetica, Arial, Verdana, sans serif;
+}
+.formtable input[type="button"] {
+  font-weight:bold;
+  font-family: Helvetica, Arial, Verdana, sans serif;
+}
+.formtable input[type="password"] {
+}
+.formtable input[type="file"] {
+}
+.formtable .bad {
+    background-color:#ffffcc;
+}
+
+.formtable1 {
+  background-color : white;
+  padding : 5px 12px 5px 12px;
+  border : solid #B1B1E6 3px;
+  margin: 5px;
+}
+
+.formtable1 td {
+  padding: 2px;
+  border : 0px;
+  margin : 0px;
+}
+
+.formtable1 textarea {
+}
+.formtable1 input[type="text"] {
+}
+.formtable1 input[type="password"] {
+}
+.formtable1 input[type="file"] {
+}
+.formtable1 input[type="submit"] {
+  font-weight:bold;
+}
+.formtable1 input[type="button"] {
+  font-weight:bold;
+}
+
+
+.listmenu {
+  line-height: 150%;
+}
+
+.listmenu a {
+  font-weight: bold;
+  color: black;
+}
+
+.center { 
+  text-align: center;
+}
+
+/* menu top heading */
+.menuheading { 
+  color: #000080; /* navy */
+  font-weight: bold
+}
+
+/* various colors */
+.red { color : red;}
+.brown { color : #a52a2a;}
+.green { color : green;}
+.darkgreen { color : #006400;}
+.black { color : black;}
+.navy { color : #000080;}
+.blue { color : blue;}
+.olive { color : #808000;}
+.purple { color : #800080;}
+.maroon { color : #800000;}
+.mediumvioletred { color : #C71585;}
+.darkcyan { color : #008B8B;}
+.teal { color : #008080;}
+.grey { color : #808080;}
+
+
+/* style for all kind of warning */
+.warning { 
+  color: red;
+  font-weight: bold
+}
+/* style for all kind of reports */
+.report { 
+  color: blue;
+  font-weight: bold
+}
+
+table.menu {
+  border: 0px;
+  padding : 0px;
+  visibility: hidden;
+  position: absolute;
+  /* border-collapse:collapse; cannot be declared due to IE 7 bug */
+}
+
+/* the leftmost top-level tab */
+.menu table.menu td.top:first-child {
+  padding: 0px 5px 2px 0px;
+  color: #003366;
+  white-space: nowrap;
+  background-color: #D0D0F0;
+  border : 0px;
+  text-decoration : underline;
+  cursor : pointer;
+}
+
+/* the top-level menu tabs */
+.menu table.menu td.top {
+  padding: 0px 5px 2px 5px;
+  color: #003366;
+  white-space: nowrap;
+  background-color: #D0D0F0;
+  border : 0px;
+  text-decoration : underline;
+  cursor : pointer;
+}
+
+/* the leftmost top-level tab */
+.proceedingsmenu table.menu td.top:first-child {
+  padding: 0px 5px 2px 0px;
+  color: navy;
+  white-space: nowrap;
+  background-color: #aacccc;
+  border : 0px;
+  text-decoration : underline;
+  cursor : pointer;
+}
+
+/* menu tabs on the menu */
+.menu table.menu td.tab {
+  padding: 1px 10px 1px 10px;
+  color: #003366;
+  white-space: nowrap;
+  background-color: #D0D0F0;
+  border : 1px solid #660099;
+  font-family: Arial,Helvetica, sans-serif;
+  cursor : pointer;
+}
+
+/* the top-level menu tabs */
+.proceedingsmenu table.menu td.top {
+  padding: 0px 5px 2px 5px;
+  color: navy;
+  white-space: nowrap;
+  background-color: #aacccc;
+  border : 0px;
+  text-decoration : underline;
+  cursor : pointer;
+}
+
+
+/* menu tabs on the menu */
+.proceedingsmenu table.menu td.tab {
+  padding: 1px 10px 1px 10px;
+  color: navy;
+  white-space: nowrap;
+  background-color: #aacccc;
+  border : 1px solid #660099;
+  font-family: Arial,Helvetica, sans-serif;
+}
+
+.wikitab {
+  float: right;
+}
+
+.review {
+  width:100%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border-left: solid #bfd6ff 3px;
+  border-bottom: solid #bfd6ff 2px;
+  border-right: solid #bfd6ff 2px;
+  margin-top:7px;
+  border-collapse:collapse;
+  empty-cells:show;
+}
+
+.review .text {
+}
+
+.review .label {
+  font-weight: bold;
+  text-align: center;
+  background-color: #bfd6ff;
+  padding: 2px 0px 2px 0px;
+}
+
+.review tr {
+  background-color:#e6e6ff;
+}
+
+.review td {
+  border: solid white 1px;
+  padding: 1px 3pt 1px 3pt;
+}
+
+/* review superceded by another review */
+.sreview {
+  width:100%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border-left: solid #bfd6ff 3px;
+  border-bottom: solid #bfd6ff 2px;
+  border-right: solid #bfd6ff 2px;
+  margin-top:7px;
+  border-collapse:collapse;
+  empty-cells:show;
+}
+
+.sreview .text {}
+
+.sreview .label {
+  font-weight: bold;
+  text-align: center;
+  background-color: #cfe6ff;
+  padding: 2px 0px 2px 0px;
+}
+
+.sreview tr {
+    color : #808080;
+}
+
+.sreview td {
+  border: solid #cccccc 1px;
+  padding: 1px 3pt 1px 3pt;
+}
+
+.comment {
+  width:100%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border-left: solid #9fd4b8 3px;
+  border-bottom: solid #9fd4b8 2px;
+  border-right: solid #9fd4b8 2px;
+  margin-top:7px;
+  border-collapse:collapse;
+  empty-cells:show;
+}
+
+.comment .label {
+  font-weight: bold;
+  text-align: center;
+  background-color: #9fd4b8;
+  padding: 2px 0px 2px 0px;
+}
+
+.comment .text {
+}
+
+.comment tr {
+  background-color:#ddffdd;
+}
+
+.comment td {
+    border: solid white 1px;
+    padding: 1px 3pt 1px 3pt;
+}
+
+.submission {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: solid #f4cb45 2pt;
+  margin-top:7pt;
+}
+
+.submission .label {
+  font-weight: bold;
+  text-align: center;
+  background-color: #f4db85;
+  padding: 2px;
+}
+
+.submission .authors {
+  font-weight: bold;
+  text-align: center;
+  background-color: #f8dfa9;
+  padding: 2px;
+}
+
+.submission tr {
+  background-color:#f8f0d5;
+}
+
+.submission tbody td {
+  border: solid white 1px;
+}
+
+.submission .left {
+  color:#707070;
+  font-weight: bold;
+}
+
+
+.rebuttal {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border-left: solid #d2a8d1 3px;
+  border-bottom: solid #d2a8d1 2px;
+  border-right: solid #d2a8d1 2px;
+  border-collapse: collapse;
+  margin-top:7px;
+}
+
+.rebuttal .text {
+}
+
+.rebuttal .label {
+  font-weight: bold;
+  text-align: center;
+  background-color: #d2a8d1;
+}
+
+.rebuttal tr {
+  background-color:#ffe8ff;
+}
+
+.rebuttal td {
+    padding:2pt 3pt 2pt 3pt;
+    border: solid #888888 1px;
+}
+
+.rebuttal .left {
+  color:#707070;
+  font-weight: bold;
+}
+
+.metareview {
+  width:100%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border-left: solid #afc6ff 3px;
+  border-bottom: solid #afc6ff 2px;
+  border-right: solid #afc6ff 2px;
+  margin-top:7px;
+}
+
+.metareview .text {
+}
+
+.metareview .label {
+  font-weight: bold;
+  text-align: center;
+  background-color: #afc6ff;
+  padding: 2px;
+}
+
+.metareview tr {
+  background-color:#e0e0ff;
+}
+
+.metareview .left {
+  color:#707070;
+  font-weight: bold;
+}
+
+/* popup text messages appearing after executing anything */
+.textPopup {
+  background-color: #f2eda6;
+  visibility:hidden;
+  font-weight:bold;
+  padding:4px 10px 4px 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/**
+ * Submission tables are compact tables of submissions.
+ * They look good in combination with cellspacing='1px'
+ */
+.submissionTable {
+  border: solid #d5daf5 3px;
+  background-color: #d5daf5;
+  color:#777777;
+}
+.submissionTable a:visited {
+  color:#777777;
+}
+.submissionTable a:link {
+  color:#777777;
+}
+.submissionTable .authors {
+  color:#575757;
+}
+.submissionTable .authors a:link {
+  color:#575757;
+}
+.submissionTable .authors a:visited {
+  color:#575757;
+}
+.submissionTable .abstract {
+  color:#444444;
+  margin: 2px 0px 2px 5px;
+}
+.submissionTable .title {
+  color:black;
+}
+.submissionTable .number {
+  text-align:right;
+  color:black;
+}
+.submissionTable .title a:visited {
+  color:black;
+}
+.submissionTable .title a:link {
+  color:black;
+}
+.submissionTable td {
+  background-color:#ebeaf5;
+  padding: 0px;
+}
+.submissionTable a:visited {
+}
+/**
+ * Shortcuts are intended to display shortcuts to papers.
+ */
+.shortcut { 
+  color : #0000cc;
+}
+
+.shortcut a:link {
+  color : #666666;
+  text-decoration:underline;
+}
+
+.left {text-align:left;}
+.right {text-align:right;}
+.center {text-align:center;}
+.bold {font-weight:bold}
+
+/* This is what kills IE
+.wikitab:first-letter {
+  font-weight : bold;
+}
+*/
+
+.typewriter { font-family: monospace }
+.italic { font-style: italic }
+
+/* person table */
+.personTable {
+    border-collapse:collapse;
+    border: solid 2px #d6e5fd;
+    empty-cells: show;
+    padding : 3px;
+    background-color:#d6e5fd;
+}
+
+.personTable tr.first {
+    text-align:center;
+    font-weight:bold
+}
+
+.personTable td {
+    border: solid 1px #cccccc;
+    padding: 3px;
+    background-color:#f4faff;
+}
+.personTable .vip td {
+    border: solid 1px #cccccc;
+    padding : 3px;
+    background-color:#d6e5fd;
+}
+
+.buttonRow input[type="submit"] {
+		font-weight:bold;
+		margin:5pt 10pt 2pt 2pt;
+                font-family: Helvetica, Arial, Verdana, sans serif;
+}

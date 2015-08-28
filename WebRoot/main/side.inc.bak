@@ -1,0 +1,176 @@
+<%@ page language="java"  pageEncoding="utf-8"%>
+<%@ page import="com.cotrip.daoimp.*"%>
+<%@ page import="com.cotrip.bean.*"%>
+<%@page import="java.text.*"%>
+<%@page import="java.util.Date"%>
+
+<script language="javascript">
+	
+ 	function check(){
+		if(document.login.username.value==""){
+			alert("用户邮箱不能为空!");
+			
+			return false;
+		}
+		if(document.login.username.value.length>=40){
+			alert("用户邮箱不能超过40个字符!");
+			
+			return false;
+		}
+		
+		if(document.login.password.value==""){
+			alert("密码不能为空!");
+			
+			return false;
+		}
+		if(document.login.password.value.length>=20){
+			alert("密码长度不能超过20个字符!");
+			
+			return false;
+		}
+	}
+</script>
+<ul>
+
+	 <!-- 界面登录-->
+	 <%  Object o1 = session.getAttribute("curuser"); if (o1 == null) {
+					//User curuser = (User) o; %>
+	<li>
+		<div class="side_title">
+			<h3 style="margin: 0px;">&nbsp;&nbsp;用户登录</h3>
+		</div>
+		<div class="side_content side_font">
+	    <FORM name="login" id="login"  method=post onSubmit="javascript:return check();" 
+       action="servlet/UserLogin" >
+      
+      <TABLE  >
+        <TBODY>
+        <TR>
+          <TD colSpan=2>请使用您的Co-Trip用户进行登录</TD>
+        </TR>
+        <TR>
+          <TD class=right>用户邮箱:</TD>
+          <TD><INPUT name="username" id="username" size=15 type=text></TD></TR>
+        <TR>
+          <TD class=right>用户密码:</TD>
+          <TD><INPUT id="password" size=15 type="password" name="password"></TD></TR>
+        <TR>
+          <TD 
+        colSpan=2><INPUT value="登录" type=submit name="Login" align="right"></TD></TR>
+									<TR>
+										<TD colSpan=2>
+											<HR></TD>
+									</TR>
+									<TR>
+										<TD colSpan=2>如果您还没有Co-Trip账号, <A href="userRegistration.html">欢迎您注册</A></TD>
+									</TR>
+									</TBODY></TABLE></FORM>
+		</div>
+	</li>
+	<% }  %>
+	
+	
+	<%
+	ArrayList<Meeting> meetings11 = new ArrayList<Meeting>();
+	MeetingImp mi11 = new MeetingImp();
+	meetings11 = mi11.queryNewMettings();
+	
+	%>
+	<!-- 最新会议列表 -->
+	<li>
+		<div class="side_title">
+			<h3 style="margin: 0px;">&nbsp;&nbsp;最新会议列表</h3>
+		</div>
+		<div class="side_content side_font">
+				<%
+							if (meetings11.isEmpty()) {
+				%>
+				<center>暂时没有新的会议！</center>
+				<%
+							} else {
+								out.println("<table>");
+								out.println("<tr><td>会议名称</td><td>开始时间</td></tr>");
+								
+								for (int i = 0; i < meetings11.size(); i++) {
+									out.println("<tr>");
+									out.println("<td><a href='main/meeting.jsp?id="
+											+ meetings11.get(i).getMeetingID() + "'>");
+									if(meetings11.get(i).getMeetingname().length()>=20)	
+										if(meetings11.get(i).getMeetinganame().length()>=4&&meetings11.get(i).getMeetinganame().length()<=20)	
+											out.println(meetings11.get(i).getMeetingname().substring(0,19) + "</a></td><td>"+meetings11.get(i).getBegintime()+"</td>");
+										else
+											out.println(meetings11.get(i).getMeetingname().substring(0,19) + "</a></td><td>"+meetings11.get(i).getBegintime()+"</td>");
+									else
+											out.println(meetings11.get(i).getMeetingname() + "</a></td><td>"+meetings11.get(i).getBegintime()+"</td>");
+									out.println("</tr>");
+								}
+								out.println("</table>");
+							}
+							
+							
+				%>
+		</div>
+	</li>
+	<!--  -->
+	
+	<!-- 搜索会议 -->
+	<li>
+		<div class="side_title">
+			<h3 style="margin: 0px;">&nbsp;&nbsp;搜索会议</h3>
+		</div>
+		<div class="side_content side_font">
+			<form action="main/search.jsp" method="get">
+				<input class="side_font" type="text" name="searchKey" /> <input
+					type="submit" name="submit" value="搜索" />
+			</form>
+		</div>
+	</li>
+	<!--  -->
+	<li>
+		<div class="side_title">
+			<h3 style="margin: 0px;">&nbsp;&nbsp;联系我们</h3>
+		</div>
+		<div class="side_content side_font">
+	    <strong>Tel:　</strong>　13873239148<br /> 
+	    <strong>Email:</strong>　ljx529@gmail.com <br/> 
+			<strong>URL:</strong>　 <a href="http://kpnm.hnust.cn" target="_blank">http://kpnm.hnust.cn</a> <br />
+		</div>
+	</li>
+	
+	<!-- 图标式样分享 -->
+	<li>
+		<div class="side_title">
+			<h3 style="margin: 0px;">&nbsp;&nbsp;感谢分享</h3>
+		</div>
+		<div class="side_content side_font">
+	    <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_kaixin001"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+		</div>
+	</li>
+	<!-- 
+	<li>
+		<div class="side_title">
+			<h3 style="margin: 0px;">&nbsp;&nbsp;建议</h3>
+		</div>
+		<div class="side_content side_font">
+			<form action="#" method="get">
+				<input class="side_font" type="text" name="searchKey" /> <input
+					type="submit" name="submit" value="submit" />
+			</form>
+		</div></li>
+		 -->
+		 
+		
+</ul>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->

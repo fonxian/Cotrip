@@ -1,0 +1,126 @@
+A {
+	TEXT-DECORATION: underline
+}
+A:link {
+	FONT-FAMILY: Verdana, sans-serif; COLOR: #333333; FONT-SIZE: 100%
+}
+A:visited {
+	FONT-FAMILY: Verdana, sans-serif; COLOR: #333333; FONT-SIZE: 100%
+}
+A:active {
+	FONT-FAMILY: Verdana, sans-serif; COLOR: #333333; FONT-SIZE: 100%
+}
+A:hover {
+	FONT-FAMILY: Verdana, sans-serif; COLOR: #ff0000; FONT-SIZE: 100%
+}
+A.menu {
+	FONT-FAMILY: Tahoma, sans-serif; TEXT-DECORATION: none
+}
+A.menu:link {
+	FONT-FAMILY: Tahoma, sans-serif; COLOR: #000000; FONT-SIZE: 10pt
+}
+A.menu:visited {
+	FONT-FAMILY: Tahoma, sans-serif; COLOR: #000000; FONT-SIZE: 10pt
+}
+A.menu:active {
+	FONT-FAMILY: Tahoma, sans-serif; COLOR: #000000; FONT-SIZE: 10pt
+}
+A.menu:hover {
+	FONT-FAMILY: Tahoma, sans-serif; COLOR: #ff0000; FONT-SIZE: 10pt; TEXT-DECORATION: underline
+}
+BODY {
+	MARGIN: 10px 5% 0px
+}
+.title {
+	FONT-FAMILY: Tahoma, sans-serif; FONT-SIZE: 24pt; FONT-WEIGHT: bold
+}
+.theme {
+	FONT-FAMILY: Tahoma, sans-serif; FONT-SIZE: 13pt; FONT-WEIGHT: bold
+}
+.subtheme {
+	FONT-FAMILY: Verdana, sans-serif; FONT-SIZE: 11pt; FONT-WEIGHT: bold
+}
+.content {
+	FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 9pt
+}
+.footer {
+	PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Tahoma, sans-serif; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+.footer_fix {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; FONT-FAMILY: Tahoma, sans-serif; FONT-SIZE: 10px
+}
+.input {
+	BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BACKGROUND-COLOR: #e3e6ee; WIDTH: 80px; FONT-FAMILY: verdana; COLOR: #666666; FONT-SIZE: 10px; BORDER-TOP: #999999 1px solid; BORDER-RIGHT: #999999 1px solid
+}
+.go {
+	BORDER-BOTTOM: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BACKGROUND-COLOR: #ffffff; WIDTH: 36px; FONT-FAMILY: verdana; COLOR: #666666; FONT-SIZE: 10pt; BORDER-TOP: #999999 1px solid; BORDER-RIGHT: #999999 1px solid
+}
+.citation {
+	BORDER-BOTTOM-STYLE: solid; PADDING-BOTTOM: 0px; BORDER-RIGHT-STYLE: solid; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; FONT-FAMILY: Verdana, Arial, sans-serif; BORDER-TOP-STYLE: solid; COLOR: #942929; BORDER-RIGHT-COLOR: #adadb5; FONT-SIZE: 9pt; BORDER-LEFT-STYLE: solid; PADDING-TOP: 15px
+}
+.menu_td {
+	BORDER-BOTTOM: 0px solid; BORDER-LEFT: 0px solid; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: 0px solid; BORDER-RIGHT: #000000 3px solid
+}
+.menu_td2 {
+	BORDER-BOTTOM: 0px solid; BORDER-LEFT: 0px solid; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: 0px solid; BORDER-RIGHT: #000000 1px solid
+}
+.menu_td3 {
+	BORDER-BOTTOM: 0px solid; BORDER-LEFT: 0px solid; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; BORDER-TOP: 0px solid; BORDER-RIGHT: #ff0000 3px solid
+}
+.notice {
+	BORDER-BOTTOM: 1px solid; BORDER-LEFT: 1px solid; PADDING-BOTTOM: 15px; BACKGROUND-COLOR: #fef788; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; COLOR: black; BORDER-TOP: 1px solid; BORDER-RIGHT: #adadb5 1px solid; PADDING-TOP: 15px
+}
+.thinlineleft {
+	BORDER-BOTTOM: 0px solid; BORDER-LEFT: 1px solid; PADDING-LEFT: 4px; BORDER-TOP: 0px solid; BORDER-RIGHT: #adadb5 0px solid
+}
+.redbar {
+	BACKGROUND-COLOR: #e66329; WIDTH: 3px; HEIGHT: 40px
+}
+A.rightmenu {
+	FONT-FAMILY: Tahoma, sans-serif; COLOR: #e66329; FONT-SIZE: 7pt; TEXT-DECORATION: underline
+}
+A.rightmenu:link {
+	FONT-FAMILY: Tahoma, sans-serif; COLOR: #e66329; FONT-SIZE: 7pt; TEXT-DECORATION: underline
+}
+A.rightmenu:visited {
+	FONT-FAMILY: Tahoma, sans-serif; COLOR: #e66329; FONT-SIZE: 7pt; TEXT-DECORATION: underline
+}
+A.rightmenu:active {
+	FONT-FAMILY: Tahoma, sans-serif; COLOR: #e66329; FONT-SIZE: 7pt; TEXT-DECORATION: underline
+}
+A.rightmenu:hover {
+	FONT-FAMILY: Tahoma, sans-serif; COLOR: #e66329; FONT-SIZE: 7pt; TEXT-DECORATION: underline
+}
+DIV.center {
+	TEXT-ALIGN: center
+}
+.darkblue {
+	COLOR: darkblue
+}
+.citeemph {
+	FONT-WEIGHT: bold
+}
+.red {
+	COLOR: red
+}
+.blue {
+	COLOR: blue
+}
+A.author {
+	TEXT-ALIGN: right; FONT-STYLE: italic; FONT-FAMILY: Verdana, Arial, sans-serif; COLOR: #942929; FONT-SIZE: 9pt
+}
+.conftable {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-TOP: #cccccc 0px solid; BORDER-RIGHT: #cccccc 0px solid
+}
+.conftable TR {
+	HEIGHT: 28px
+}
+.conftable .number {
+	BORDER-BOTTOM: #cccccc 0px solid; TEXT-ALIGN: right; BORDER-LEFT: #cccccc 0px solid; FONT-FAMILY: Verdana, Arial, sans-serif; FONT-SIZE: 9pt; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.conftable .conf {
+	BORDER-BOTTOM: #cccccc 0px solid; BORDER-LEFT: #cccccc 0px solid; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Tahoma, sans-serif; FONT-SIZE: 9pt; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; TEXT-DECORATION: none
+}
+.first:first-letter {
+	COLOR: red; FONT-SIZE: larger
+}

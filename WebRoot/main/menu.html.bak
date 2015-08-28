@@ -1,0 +1,66 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8" %>
+<script language="javascript">
+	function isOut() {
+		if (confirm('Are you Sure to quit Co-Trip System?'))
+			return true;
+		else
+			return false;
+	}
+</script>
+<DIV id=menu0 class=menu>
+	<DIV>
+		<TABLE style="POSITION: static; FLOAT: right; VISIBILITY: visible"
+			class=menu>
+			<TBODY>
+				<TR>
+					<TD id=menu5 class=top title="申请会议"
+						onMouseOut="Menu.hide('menu5')"><a
+						href="<%=basePath%>main/apply.jsp" style="text-decoration:none"><font
+							color="#003399"><U>申请会议</U> </font> </a></TD> 
+					<TD id=menu7 class=top title="Co-Trip 帮助"
+						onMouseOut="Menu.hide('menu7')"><a
+						href="http://kg.hnust.edu.cn" target="_blank"
+						style="text-decoration:none"> <font color="#003399"><U>帮助</U>
+						</font> </a></TD> <% Object o = session.getAttribute("curuser"); if (o != null) {
+					//User curuser = (User) o; %>
+					<TD id=menu8 class=top title="我的账户" onMouseOut="Menu.hide('menu8')"><a
+						href="<%=basePath%>user/index.jsp" style="text-decoration:none"><font
+							color="#003399"><U>个人中心</U> </font> </a></TD> <% } else { %>
+					<TD id=menu8 class=top title="登录co-trip"
+						onMouseOut="Menu.hide('menu8')"><a
+						href="<%=basePath%>userLogin.jsp" style="text-decoration:none"><font
+							color="#003399"><U>登录</U> </font> </a></TD> <% } %>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<SPAN class=menuheading>欢迎来到Co-Trip!! </SPAN>
+	</DIV>
+	<br>
+
+	<TABLE style="POSITION: static; VISIBILITY: visible" class=menu>
+		<TBODY>
+			<TR>
+				<TD id=menu1 class=top onMouseOver="Menu.show('menu1')"
+					title="Co-Trip 首页" onmouseout="Menu.hide('menu1')"
+					onclick="Menu.followLink('menu1','<%=basePath%>main/index.jsp')">系统首页</TD>
+				<TD id=menu2 class=top onMouseOver="Menu.show('menu2')"
+					title="Co-Trip 系统新闻" onmouseout="Menu.hide('menu2')"
+					onclick="Menu.followLink('menu2','<%=basePath%>main/SystemNewsList.jsp')">系统新闻</TD>
+				<TD id=menu4 class=top onMouseOver="Menu.show('menu4')"
+					title="Co-Trip 系统公告" onMouseOut="Menu.hide('menu4')"
+					onclick="Menu.followLink('menu4','<%=basePath%>main/SystemNoticesList.jsp')">
+					系统公告</TD>
+
+				<TD id=menu6 class=top onMouseOver="Menu.show('menu6')"
+					title="关于 我们" onMouseOut="Menu.hide('menu6')"
+					onclick="Menu.followLink('menu6','<%=basePath%>main/about.jsp')">
+					关于我们</TD>
+				<TD id=menu17 class=top onMouseOver="Menu.show('menu17')"
+					title="联系我们" onMouseOut="Menu.hide('menu17')"
+					onclick="Menu.followLink('menu17','<%=basePath%>main/contact.jsp')">
+					联系我们</TD>
+
+			</TR>
+		</TBODY>
+	</TABLE>
+</DIV>

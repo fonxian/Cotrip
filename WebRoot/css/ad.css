@@ -1,0 +1,42 @@
+.adhead1 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: black; PADDING-LEFT: 3px; WIDTH: 280px; PADDING-RIGHT: 3px; COLOR: white; FONT-SIZE: 12px; CURSOR: pointer; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.adhead1 A:link {
+	COLOR: white
+}
+.adhead1 A:visited {
+	COLOR: white
+}
+.ad1 {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; WIDTH: 264px; PADDING-RIGHT: 10px; FONT-SIZE: 12px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 7px
+}
+.ad1 A:link {
+	COLOR: #b97e2b
+}
+.ad1 A:visited {
+	COLOR: #b97e2b
+}
+.adcontent1 {
+	COLOR: black; PADDING-TOP: 3px
+}
+.adhead2 {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #f5bb10; PADDING-LEFT: 3px; WIDTH: 280px; PADDING-RIGHT: 3px; COLOR: white; FONT-SIZE: 12px; CURSOR: pointer; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.adhead2 A:link {
+	COLOR: white
+}
+.adhead2 A:visited {
+	COLOR: white
+}
+.ad2 {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; WIDTH: 264px; PADDING-RIGHT: 10px; FONT-SIZE: 12px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 7px
+}
+.ad2 A:link {
+	COLOR: #2b99b9
+}
+.ad2 A:visited {
+	COLOR: #2b99b9
+}
+.adcontent2 {
+	COLOR: black; PADDING-TOP: 3px
+}

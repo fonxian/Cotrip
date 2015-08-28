@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<servlet>
+		<servlet-name>AddMeetingUser</servlet-name>
+		<servlet-class>com.cotrip.backServlet.AddMeetingUser</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UserLogin</servlet-name>
+		<servlet-class>com.cotrip.fontServlet.UserLogin</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UserRegist</servlet-name>
+		<servlet-class>com.cotrip.fontServlet.UserRegist</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ModifyPassword</servlet-name>
+		<servlet-class>com.cotrip.backServlet.ModifyPassword</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>BackupDB</servlet-name>
+		<servlet-class>com.cotrip.backServlet.BackupDB</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RecoveryDB</servlet-name>
+		<servlet-class>com.cotrip.backServlet.RecoveryDB</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AdminLogin</servlet-name>
+		<servlet-class>com.cotrip.backServlet.AdminLogin</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddSysNewsNotices</servlet-name>
+		<servlet-class>com.cotrip.backServlet.AddSysNewsNotices</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChangeSysNewsNotices</servlet-name>
+		<servlet-class>com.cotrip.backServlet.ChangeSysNewsNotices</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChangeUserInfo</servlet-name>
+		<servlet-class>com.cotrip.backServlet.ChangeUserInfo</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChangeMeetingNewsNotices</servlet-name>
+		<servlet-class>com.cotrip.backServlet.ChangeMeetingNewsNotices</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChangeMeeting</servlet-name>
+		<servlet-class>com.cotrip.backServlet.ChangeMeeting</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddMeetingNewsNotices</servlet-name>
+		<servlet-class>com.cotrip.backServlet.AddMeetingNewsNotices</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddMeetingServer</servlet-name>
+		<servlet-class>com.cotrip.backServlet.AddMeetingServer</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChangeMeetingManager</servlet-name>
+		<servlet-class>com.cotrip.backServlet.ChangeMeetingManager</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddMeetingService</servlet-name>
+		<servlet-class>com.cotrip.backServlet.AddMeetingService</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChangeMeetingService</servlet-name>
+		<servlet-class>com.cotrip.backServlet.ChangeMeetingService</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SetServer</servlet-name>
+		<servlet-class>com.cotrip.backServlet.SetServer</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ModifyInfo</servlet-name>
+		<servlet-class>com.cotrip.backServlet.ModifyInfo</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UserUpdate</servlet-name>
+		<servlet-class>com.cotrip.fontServlet.UserUpdate</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ChangePassword</servlet-name>
+		<servlet-class>com.cotrip.fontServlet.ChangePassword</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>meeting</servlet-name>
+		<servlet-class>com.cotrip.meetingServlet.meeting</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>JoinMeeting</servlet-name>
+		<servlet-class>com.cotrip.fontServlet.JoinMeeting</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddMeetinguser</servlet-name>
+		<servlet-class>com.cotrip.fontServlet.AddMeetinguser</servlet-class>
+	</servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<filter>
+		<filter-name>encodingfilter</filter-name>
+		<filter-class>com.cotrip.filter.CharFilter</filter-class>
+		<init-param>
+			<description>encode to UTF-8</description>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>managerlogin</filter-name>
+		<filter-class>com.cotrip.filter.BackFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>organizerlogin</filter-name>
+		<filter-class>com.cotrip.filter.OrganizerFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>serverlogin</filter-name>
+		<filter-class>com.cotrip.filter.ServerFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>userlogin</filter-name>
+		<filter-class>com.cotrip.fontServlet.BackFilter</filter-class>
+	</filter>
+	<filter>
+		<filter-name>muserlogin</filter-name>
+		<filter-class>com.cotrip.fontServlet.BackFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>encodingfilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>managerlogin</filter-name>
+		<url-pattern>/admin/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>organizerlogin</filter-name>
+		<url-pattern>/organizer/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>serverlogin</filter-name>
+		<url-pattern>/server/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>userlogin</filter-name>
+		<url-pattern>/user/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>muserlogin</filter-name>
+		<url-pattern>/meeting/*</url-pattern>
+	</filter-mapping>
+
+
+	
+	<servlet-mapping>
+		<servlet-name>AddMeetingUser</servlet-name>
+		<url-pattern>/servlet/AddMeetingUser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>meeting</servlet-name>
+		<url-pattern>/meeting</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangePassword</servlet-name>
+		<url-pattern>/user/ChangePassword</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserUpdate</servlet-name>
+		<url-pattern>/user/UserUpdate</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserLogin</servlet-name>
+		<url-pattern>/servlet/UserLogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserRegist</servlet-name>
+		<url-pattern>/servlet/UserRegist</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ModifyPassword</servlet-name>
+		<url-pattern>/servlet/ModifyPassword</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BackupDB</servlet-name>
+		<url-pattern>/servlet/BackupDB</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RecoveryDB</servlet-name>
+		<url-pattern>/servlet/RecoveryDB</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AdminLogin</servlet-name>
+		<url-pattern>/servlet/AdminLogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddSysNewsNotices</servlet-name>
+		<url-pattern>/servlet/AddSysNewsNotices</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangeSysNewsNotices</servlet-name>
+		<url-pattern>/servlet/ChangeSysNewsNotices</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangeUserInfo</servlet-name>
+		<url-pattern>/servlet/ChangeUserInfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangeMeetingNewsNotices</servlet-name>
+		<url-pattern>/servlet/ChangeMeetingNewsNotices</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangeMeeting</servlet-name>
+		<url-pattern>/servlet/ChangeMeeting</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddMeetingNewsNotices</servlet-name>
+		<url-pattern>/servlet/AddMeetingNewsNotices</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddMeetingServer</servlet-name>
+		<url-pattern>/servlet/AddMeetingServer</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangeMeetingManager</servlet-name>
+		<url-pattern>/servlet/ChangeMeetingManager</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddMeetingService</servlet-name>
+		<url-pattern>/servlet/AddMeetingService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ChangeMeetingService</servlet-name>
+		<url-pattern>/servlet/ChangeMeetingService</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SetServer</servlet-name>
+		<url-pattern>/servlet/SetServer</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ModifyInfo</servlet-name>
+		<url-pattern>/servlet/ModifyInfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>JoinMeeting</servlet-name>
+		<url-pattern>/user/JoinMeeting</url-pattern>
+	</servlet-mapping>
+
+	<!-- 会议模块 -->
+
+	<servlet>
+		<servlet-name>meetingServlet</servlet-name>
+		<servlet-class>com.cotrip.meetingServlet.meetingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>meetingServlet</servlet-name>
+		<url-pattern>/meetingServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>planServlet</servlet-name>
+		<servlet-class>com.cotrip.meetingServlet.planServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>planServlet</servlet-name>
+		<url-pattern>/planServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>otherPlanServlet</servlet-name>
+		<servlet-class>com.cotrip.meetingServlet.otherPlanServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>otherPlanServlet</servlet-name>
+		<url-pattern>/otherPlanServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>updatePlanServlet</servlet-name>
+		<servlet-class>com.cotrip.meetingServlet.updatePlanServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updatePlanServlet</servlet-name>
+		<url-pattern>/updatePlanServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>to</servlet-name>
+		<servlet-class>com.cotrip.meetingServlet.to</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ApplyMeeting</servlet-name>
+		<servlet-class>com.cotrip.fontServlet.ApplyMeeting</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>to</servlet-name>
+		<url-pattern>/to</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ApplyMeeting</servlet-name>
+		<url-pattern>/servlet/ApplyMeeting</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- 用户注册激活，找回密码模块 -->
+	<servlet>
+		<description>激活账号</description>
+		<servlet-name>ActivateAccount</servlet-name>
+		<servlet-class>com.cotrip.fontServlet.ActivateAccountServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ActivateAccount</servlet-name>
+		<url-pattern>/ActivateAccount</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>重新发送激活邮件</description>
+		<servlet-name>ResendActivateEmail</servlet-name>
+		<servlet-class>com.cotrip.fontServlet.ResendActivateEmail</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ResendActivateEmail</servlet-name>
+		<url-pattern>/servlet/ResendActivateEmail</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ResendActivateEmail</servlet-name>
+		<url-pattern>/servlet/AddMeetinguser</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	<servlet>
+		<description>重设密码</description>
+		<servlet-name>ResetPwdServlet</servlet-name>
+		<servlet-class>com.cotrip.fontServlet.ResetPwdServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ResetPwdServlet</servlet-name>
+		<url-pattern>/resetPwd</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>发送重设密码请求</description>
+		<servlet-name>SendResetPwdServlet</servlet-name>
+		<servlet-class>com.cotrip.fontServlet.SendResetPwdServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SendResetPwdServlet</servlet-name>
+		<url-pattern>/sendResetPwd</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>main/index.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.htm</location>
+	</error-page>
+	<error-page>
+		<error-code>400</error-code>
+		<location>/500.htm</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/500.htm</location>
+	</error-page>
+	
+	
+	
+	<!--   qq login test -->   
+    <servlet>
+        <servlet-name>afterlogin</servlet-name>
+        <servlet-class>com.qq.connect.demo.AfterLoginRedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>afterlogin</servlet-name>
+        <url-pattern>/afterlogin.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>qqLogin</servlet-name>
+        <servlet-class>com.qq.connect.demo.qqLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>qqLogin</servlet-name>
+        <url-pattern>/qqLogin.do</url-pattern>
+    </servlet-mapping>
+	
+	
+	
+</web-app>

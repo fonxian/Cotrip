@@ -1,0 +1,102 @@
+<script language="javascript">
+	function isOut() {
+		if (confirm('Are you Sure to quit Co-Trip System?'))
+			return true;
+		else
+			return false;
+	}
+</script>
+<DIV id=menu0 class=menu>
+	<DIV>
+		<TABLE style="POSITION: static; FLOAT: right; VISIBILITY: visible"
+			class=menu>
+			<TBODY>
+				<TR>
+					<TD id=menu7 class=top title="Co-Trip Help"
+						onMouseOut="Menu.hide('menu7')"><a
+						href="http://kg.hnust.edu.cn" target="_blank"
+						style="text-decoration:none"> <font color="#003399"><U>Help</U>
+						</font> </a>
+					</TD>
+					<TD id=menu8 class=top title="Sign out"
+						onMouseOut="Menu.hide('menu8')"><a href="<%=basePath%>userLogin.html"
+						style="text-decoration:none"><font color="#003399"><U>Click
+									here to log in</U> </font> </a>
+					</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<SPAN class=menuheading>Welcome to Co-Trip!! </SPAN>
+	</DIV>
+	<br>
+
+	<TABLE style="POSITION: static; VISIBILITY: visible" class=menu>
+		<TBODY>
+			<TR>
+				<TD id=menu1 class=top onMouseOver="Menu.show('menu1')"
+					title="Co-Trip submission system and your papers"
+					onmouseout="Menu.hide('menu1')"
+					onclick="Menu.followLink('menu1','<%=basePath%>main/index.jsp')">Overview</TD>
+				<TD id=menu2 class=top onMouseOver="Menu.show('menu2')"
+					title="User Infomation Management" onmouseout="Menu.hide('menu2')"
+					onclick="Menu.followLink('menu2','<%=basePath%>main/SystemNewsList.jsp')">System
+					News</TD>
+				<TD id=menu4 class=top onMouseOver="Menu.show('menu4')"
+					title="Travel Plan Infomation Management"
+					onMouseOut="Menu.hide('menu4')"
+					onclick="Menu.followLink('menu4','<%=basePath%>main/SystemNoticesList.jsp')">
+					System Notices</TD>
+
+				<TD id=menu6 class=top onMouseOver="Menu.show('menu6')"
+					title="Travel Services Infomation Management"
+					onMouseOut="Menu.hide('menu6')"
+					onclick="Menu.followLink('menu6','<%=basePath%>main/about.jsp')">
+					About Co-trip</TD>
+				<TD id=menu17 class=top onMouseOver="Menu.show('menu17')"
+					title="Conference Contact Infomation Management"
+					onMouseOut="Menu.hide('menu17')"
+					onclick="Menu.followLink('menu17','<%=basePath%>main/contact.jsp')">
+					Contact Us</TD>
+
+				<TD id=menu9 class=top onMouseOver="Menu.show('menu9')"
+					title="Your account and news" onMouseOut="Menu.hide('menu9')"
+					onclick="Menu.followLink('menu9','/conferences/other.cgi?a=2023999')">
+					Co-Trip</TD>
+			</TR>
+		</TBODY>
+	</TABLE>
+
+	<TABLE style="Z-INDEX: 1" id=tmenu9 class=menu>
+		<TBODY>
+			<TR>
+				<TD id=menu10 class=tab onMouseOver="Menu.show('menu10')"
+					title="Co-Trip news" onMouseOut="Menu.hide('menu10')"
+					onclick="Menu.followLink('menu10','<%=basePath%>main/SystemNewsList.jsp')">News</TD>
+			</TR>
+			<TR>
+				<TD id=menu11 class=tab onMouseOver="Menu.show('menu11')"
+					title="account information and updates"
+					onMouseOut="Menu.hide('menu11')"
+					onclick="Menu.followLink('menu11','<%=basePath%>user/index.jsp')">User Info</TD>
+			</TR>
+			<TR>
+				<TD id=menu12 class=tab onMouseOver="Menu.show('menu12')"
+					title="my previous conferences" onMouseOut="Menu.hide('menu12')"
+					onclick="Menu.followLink('menu12','<%=basePath%>user/MyConferences.jsp')">My conferences</TD>
+			</TR>
+			<TR>
+				<TD id=menu13 class=tab onMouseOver="Menu.show('menu13')"
+					title="Co-Trip Terms of Service" onMouseOut="Menu.hide('menu13')"
+					onclick="Menu.followLink('menu13','termOfService.jsp')">Terms
+					of Service</TD>
+			</TR>
+
+			<TR>
+				<TD id=menu15 class=tab onMouseOver="Menu.show('menu15')"
+					title="Sign out" onMouseOut="Menu.hide('menu15')"
+					onclick="Menu.followLink('menu15','<%=basePath%>userLogout.jsp')">Sign out
+				</TD>
+			</TR>
+		</TBODY>
+	</TABLE>
+</DIV>

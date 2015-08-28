@@ -1,0 +1,111 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Co-Trip参会人员注册</title>
+<link rel="icon" href="images/chairEC.jpg" type="image/jpeg" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script language="javascript">
+	
+ 	function check(){
+	 	
+		
+	
+		if(document.reg.username.value==""){
+			alert("姓名不能为空，请输入您的姓名!");
+			return false;
+		}
+		if(document.reg.username.value.length>=40){
+			alert("姓名长度不能超过40个字符!");
+			return false;
+		}
+		if(document.reg.email.value==""){
+			alert("邮箱不能为空!");
+			return false;
+		}
+		//'********************************************************* 
+		// ' Purpose: 判断输入是否为Email 
+		// ' Inputs: String 
+		// ' Returns: True, False 
+		//'********************************************************* 
+		
+		if (document.reg.email.value.indexOf("'")!=-1) { 
+			alert("请输入正确的邮箱格式，如： abc@abc.com.");
+			return false;
+		} 
+		if (document.reg.email.value.indexOf("@")==-1) { 
+			alert("请输入正确的邮箱格式，如： abc@abc.com.");
+			return false;
+		} 
+		else if(document.reg.email.value.charAt(0)=="@"){
+			alert("请输入正确的邮箱格式，如： abc@abc.com.");
+			return false;
+		} 
+		if(document.reg.email.value.length>=50){
+			alert("请输入正确的邮箱格式，如： abc@abc.com.");
+			return false;
+		}
+		if(document.reg.password1.value==""){
+			alert("密码不能为空!");
+			return false;
+		}
+		if(document.reg.password1.value.length>=20){
+			alert("密码长度不能超过20个字符!");
+			return false;
+		}
+		if(document.reg.password1.value.length<5){
+			alert("密码长度不能少于5个字符!");
+			return false;
+		}
+		if(document.reg.password2.value==""){
+			alert("请确认密码!");
+			return false;
+		}
+		if(document.reg.password2.value.length>=20){
+			alert("确认密码的长度不能超过20个字符!");
+			return false;
+		}
+		if(document.reg.password2.value.length<5){
+			alert("确认密码的长度不能低于5个字符!");
+			return false;
+		}
+		if(document.reg.password1.value!=document.reg.password2.value){
+			
+			alert("两次输入的密码不相同，请重新输入！");
+			document.reg.password1.value="";
+			document.reg.password2.value="";
+			return false;
+		}
+		
+		
+		
+	}
+</script>
+</head>
+<body>
+<div id='content' class='nomenu'>
+<h2 id="title"> Co-Trip参会人员注册</h2>
+<p>**********************</p>
+<p>请输入对应的信息，其中<font color="#FF0000">*</font>号为必选项。</p>
+<p>请正确输入您的邮箱，邮箱将作为您登录系统的用户名。</p><p>**********************</p><form  action="servlet/UserRegist" method="post" name="reg" id="reg" onSubmit="javascript:return check();">
+    <table width="531" bordercolor="#FFFFFF" bgcolor="#99CCFF" class="formtable" style="border: solid thin blue">
+          <tr>
+            <td class="right">姓名<font color="#FF0000">*</font>:</td>
+            <td><input value="" name="username" id="username" type="text" size="50"/></td></tr>
+            <tr>
+                <td class="right">E-mail  <font color="#FF0000">*</font>:</td>
+                <td><input value="" name="email" id="email" type="text" size="50"/></td></tr>
+            <tr>
+              <td class="right">密码<font color="#FF0000">*</font>:</td>
+              <td><input value="" name="password1" id="password1" type="password" size="50"/></td></tr><tr>
+                <td class="right">确认密码<font color="#FF0000">*</font>:</td>
+          <td><input value="" name="password2" id="password2" type="password" size="50"/></td></tr>
+		  
+		  <tr><td colspan="2"><input value="提交" name="Submit" type="submit"/></td></tr></table>
+    <br />
+          <font color="#FF0000">注意：应当使用Email作为您的用户名登录系统。</font>
+</form>
+</div>
+</body>
+</html>
