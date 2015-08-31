@@ -3,7 +3,6 @@ package com.cotrip.daoimp;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.cotrip.bean.MeetingJoin;
 import com.cotrip.bean.MeetingManager;
 import com.cotrip.common.SqlHelper;
 

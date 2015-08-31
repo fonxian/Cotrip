@@ -171,15 +171,4 @@ public class ResponseImp {
 	 		 return SqlHelper.executeUpdate(sql, str);
 	   }
 	   
-//	   public ArrayList<Response> getAllResponseByPlanID(String planID){
-//		   String sql="select * from Response where planID=?";
-//			String[] str={planID};
-//			ArrayList<Response> al = SqlHelper.executeQuery(Response.class,sql, str);
-//			if(al.size()>0){
-//				return al;
-//				}
-//				else{
-//				return null;	
-//				}
-//	   }
 }

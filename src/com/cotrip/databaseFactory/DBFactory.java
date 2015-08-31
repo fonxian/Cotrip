@@ -24,10 +24,8 @@ public class DBFactory {
 			con=DriverManager.getConnection(urlstr);
 			
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return con;
@@ -103,7 +101,7 @@ public class DBFactory {
 	{
 		if(DBFactory.getConnection()!=null)
 		{
-			System.out.println("���ӳɹ�");
+			System.out.println("数据库连接失败");
 		}
 	}
 

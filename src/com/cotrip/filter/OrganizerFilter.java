@@ -19,9 +19,7 @@ public class OrganizerFilter extends HttpServlet implements Filter{
 
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
-		// TODO Auto-generated method stub
 
-		
 		//判断用户是否登录
 		HttpServletRequest req=(HttpServletRequest)request;   
 		HttpServletResponse resp=(HttpServletResponse)response;   
@@ -32,7 +30,6 @@ public class OrganizerFilter extends HttpServlet implements Filter{
 			resp.sendRedirect("../adminLogin.jsp");      
 		}
 		else{
-		//	System.out.println(user.getManageremail());
 			chain.doFilter(request, response); 
 		}
 		
@@ -40,7 +37,6 @@ public class OrganizerFilter extends HttpServlet implements Filter{
 	}
 
 	public void init(FilterConfig filterConfig) throws ServletException {
-		// TODO Auto-generated method stub
 		
 	}
 

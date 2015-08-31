@@ -28,16 +28,6 @@ public class BackDBTool {
 		System.out.println("数据库密码：" + password);
 		CheckSoftware c = null;
 
-		// try {
-		//
-		// System.out.println("MySQL服务安装地址 ：" + c.check().toString());
-		//
-		// } catch (Exception e2) {
-		//
-		// e2.printStackTrace();
-		//
-		// }
-
 		String mysqlpaths;
 
 		try {
@@ -132,7 +122,6 @@ public class BackDBTool {
 		System.out.println(properName);
 		InputStream inputStream = BackDBTool.class
 				.getResourceAsStream(properName);
-		// System.out.println("inputStream:" + inputStream);
 		Properties p = new Properties();
 
 		try {
@@ -178,7 +167,6 @@ public class BackDBTool {
 
 	public static void load(String filename) throws Exception {
 
-		// CheckSoftware c = null;
 		System.out.println("备份的数据库文件名：" + filename);
 		Properties pros = getPprVue("prop.properties");
 
@@ -189,8 +177,6 @@ public class BackDBTool {
 		System.out.println("数据库用户名root：" + root);
 		System.out.println("数据库密码pass：" + pass);
 
-		// String mysqlpaths = c.check().toString() + "bin" + "\\";
-		// String mysqlpaths = "C:/Program Files/MySQL/MySQL Server 5.1/bin/";
 
 		String sqlpath = pros.getProperty("sql");
 
@@ -203,13 +189,7 @@ public class BackDBTool {
 
 		+ " cotrip1 < " + filepath; // -p后面加的是你的数据库密码
 
-		// String stmt2 = mysqlpaths + "mysqldump -h " + address + " -u" + root
-		// + " -p" + pass + " cotrip2 < " + filepath;
-		//
-		// + " cotrip1 < " + filepath;
 		System.out.println("数据库恢复指令：" + restore);
-
-		// String[] cmd = { "cmd", "/c", stmt1 };
 
 		try {
 

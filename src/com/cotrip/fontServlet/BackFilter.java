@@ -31,7 +31,6 @@ public class BackFilter extends HttpServlet implements Filter {
 	}
 
 	public void init(FilterConfig filterConfig) throws ServletException {
-		// TODO Auto-generated method stub
 
 	}
 

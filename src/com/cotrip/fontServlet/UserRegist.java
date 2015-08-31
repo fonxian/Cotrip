@@ -60,10 +60,6 @@ public class UserRegist extends HttpServlet {
 
 		out.println("<!DOCTYPE HTML>");
 		out.println("<HTML><HEAD>");
-//		out.println("<script type='application/javascript'>"
-//				+ "var v = setTimeout(goHome,3000);"
-//				+ "function goHome() {window.location = '../';}"
-//				+ "function goError() {window.location = '../';}" + "</script>");
 		out.println("<TITLE>登录</TITLE></HEAD>");
 		out.println("<BODY>");
 

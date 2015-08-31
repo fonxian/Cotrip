@@ -86,16 +86,6 @@ public class EmailUtils {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
 				String password = "cotripchenzude";
-//				InputStream is = EmailUtils.class
-//						.getResourceAsStream("password.dat");
-//				byte[] b = new byte[1024];
-//				try {
-//					int len = is.read(b);
-//					System.out.println("len:"+len);
-//					password = new String(b, 0, len);
-//				} catch (IOException e) {
-//					e.printStackTrace();
-//				}
 				return new PasswordAuthentication(FROM, password);
 			}
 

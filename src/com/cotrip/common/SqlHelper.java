@@ -65,12 +65,6 @@ public class SqlHelper {
 		return cs;
 	}
 
-	/**
-	 * 
-	 * @param sql
-	 * @param parameters
-	 * @return
-	 */
 	public static boolean executeUpdate(String sql, String[] parameters) {
 		boolean res = false;
 		try {
@@ -147,9 +141,7 @@ public class SqlHelper {
 			}
 
 			rs = ps.executeQuery();
-			//System.out.println("sql:"+sql);
 			ArrayList al = new ArrayList(); // 承载所查询的结果
-
 			ResultSetMetaData rsmd = rs.getMetaData(); // 结果集的元数据
 			int column = rsmd.getColumnCount(); // 得到列数
 
@@ -160,7 +152,6 @@ public class SqlHelper {
 				Object tempObj = c.newInstance();
 
 				for (int i = 1; i <= column; i++) {
-					// System.out.println(rsmd.getColumnName(i));
 					m.put(rsmd.getColumnName(i), rs.getString(i));
 				}
 				JavaBeanHelper.evaluate(tempObj, m);

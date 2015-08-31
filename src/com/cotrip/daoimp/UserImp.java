@@ -49,7 +49,6 @@ public class UserImp {
 		String str[] = { email };
 		ArrayList<User> al = SqlHelper.executeQuery(User.class, sql, str);
 		for (User usr : al) {
-			// System.out.println(usr.getPassword());
 			String oldpassword = usr.getPassword();
 			if (password.equals(oldpassword)) {
 				res = true;
@@ -180,13 +179,6 @@ public class UserImp {
 		return res;
 	}
 
-	// 以下为整合的代码
-	// public User getUserByID(String userID){
-	// String sql="select * from user where userID=? ";
-	// String str[]={userID};
-	// ArrayList<User> al = SqlHelper.executeQuery(User.class,sql, str);
-	// return al.get(0);
-	// }
 
 	public ArrayList<User> getAllUser() {
 		String sql = "select * from user";
@@ -194,48 +186,6 @@ public class UserImp {
 		ArrayList<User> al = SqlHelper.executeQuery(User.class, sql, str);
 		return al;
 	}
-
-	// public boolean isUser(String email, String password) {
-	// boolean res = false;
-	// String sql = "select * from user where status='P' and email=?";
-	// String str[] = { email };
-	// ArrayList<User> al = SqlHelper.executeQuery(User.class, sql, str);
-	// for (User usr : al) {
-	// // System.out.println(usr.getPassword());
-	// String oldpassword = usr.getPassword();
-	// if (password.equals(oldpassword)) {
-	// res = true;
-	// }
-	// }
-	// return res;
-	// }
-
-	// public boolean haveUser(String email) {
-	// boolean res = false;
-	// String sql = "select * from user where email=?";
-	// String str[] = { email };
-	// ArrayList<User> al = SqlHelper.executeQuery(User.class, sql, str);
-	// for (User usr : al) {
-	// // System.out.println(usr.getPassword());
-	// String oldemail = usr.getEmail();
-	// if (email.equals(oldemail)) {
-	// res = true;
-	// }
-	// }
-	// return res;
-	// }
-
-	// public boolean addUser(String name, String password, String email) {
-	// boolean res = false;
-	// Date date = new Date();
-	// SimpleDateFormat fmat = new SimpleDateFormat("yy-MM-dd");
-	// String d = fmat.format(date);
-	// String sql =
-	// "insert into user(username,password,email,registtime) values(?,?,?,?)";
-	// String str[] = { name, password, email, d };
-	// res = SqlHelper.executeUpdate(sql, str);
-	// return res;
-	// }
 
 	public boolean updateUser(User u) {
 		boolean res = false;

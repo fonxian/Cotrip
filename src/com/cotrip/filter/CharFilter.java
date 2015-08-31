@@ -20,7 +20,6 @@ public class CharFilter extends HttpServlet implements Filter{
 
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
-		// TODO Auto-generated method stub
 		try{     
 			//在控制台输出目标编码  ，并设置编码
 		//	System.out.println("trargetEncoding:"+trargetEncoding+"\n");     
@@ -39,7 +38,6 @@ public class CharFilter extends HttpServlet implements Filter{
 	
 
 	public void init(FilterConfig filterConfig) throws ServletException {
-		// TODO Auto-generated method stub
 		this.filterConfig=filterConfig;    
 		this.trargetEncoding=this.filterConfig.getInitParameter("encoding");
 	}

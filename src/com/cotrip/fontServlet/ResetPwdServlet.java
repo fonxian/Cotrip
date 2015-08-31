@@ -45,8 +45,6 @@ public class ResetPwdServlet extends HttpServlet {
 				if (randomCode.startsWith("2")
 						&& GenerateLinkUtils.verifyCheckcode(email, randomCode,
 								checkCode)) {// 随机码标志位必须是2
-					// result =
-					// "<form action='resetPwd' method='post'>新密码：<input type='text' name='newpwd'><br/>确认新密码：<input type='text' name='newpwd'><br/><input type='submit' name='newpwd'><br/></form>";
 					request.setAttribute("tempuser", lists.get(0));
 					request.getRequestDispatcher("resetpassword.jsp").forward(
 							request, response);
